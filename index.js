@@ -167,10 +167,12 @@
         event.stopImmediatePropagation();
         if (event.target.dataset.link === "rotate") {
             event.target.dataset.link = "stop";
+            event.target.innerHTML = "Остановить!";
             rotate();
         }
         else {
             event.target.dataset.link = "rotate";
+            event.target.innerHTML = "Вращать!";
             stopRotate();
         }
     });
