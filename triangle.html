@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <script defer src="https://nikolaygorovikov.github.io/DndLib/dndLib.js"></script>
+</head>
+<body>
+<div style="display: flex; align-items: center; justify-content: center">
+    <div id="canvasHolder"></div>
+    <div data-link="rotate" data-type="button" id="color">Вращать!</div>
+</div>
+<h2 class="header">Тон</h2>
+<div class="slider">
+    <div class="dragger" data-dnd data-dnd-Preventydirection data-dnd-doBegin="begin(dragElem)" data-dnd-onmove="move(dragElem)" data-dnd-Doanywaybefore="drop(dragElem)"></div>
+</div>
+<div class="wrapper">
+    <div class="Saturation">
+        <h2 class="header">Насыщенность</h2>
+        <div class="sliderSaturation">
+            <div class="dragger" data-dnd data-dnd-Preventydirection data-dnd-doBegin="begin(dragElem)" data-dnd-onmove="move(dragElem)" data-dnd-Doanywaybefore="drop(dragElem)"></div>
+        </div>
+    </div>
+    <div class="Lightness">
+        <h2 class="header">Яркость</h2>
+        <div class="sliderLightness">
+            <div class="dragger" data-dnd data-dnd-Preventydirection data-dnd-doBegin="begin(dragElem)" data-dnd-onmove="move(dragElem)" data-dnd-Doanywaybefore="drop(dragElem)"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

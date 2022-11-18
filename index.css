@@ -1,0 +1,98 @@
+[data-type="button"] {
+    width: 30vmin;
+    height: 10vmin;
+    margin: 4vmin;
+    font-size: 6vmin;
+    text-align: center;
+    line-height: 10vmin;
+    border-radius: 3vmin;
+}
+*{
+    font-family: main;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+#canvasHolder{
+    display: flex;
+    justify-content: center;
+}
+canvas {
+    box-shadow: black 0 0 15px;
+    margin: 4vmin;
+}
+.slider, .sliderLightness, .sliderSaturation{
+    width: 90%;
+    height: 10vmin;
+    border-radius: 1.5vmin;
+    margin: 0 auto;
+    position: relative;
+    background-color: black;
+    touch-action: none;
+}
+.sliderSaturation, .sliderLightness{
+    width: 100%;
+}
+.dragger{
+    position: absolute;
+    width: 3.5vmin;
+    height: 14vmin;
+    top: -2vmin;
+    box-sizing: border-box;
+    border: 1.25vmin black solid;
+    border-radius: 1.75vmin;
+}
+.header{
+    font-size: 5vmin;
+    margin: 2vmin auto;
+    text-align: center;
+}
+.wrapper{
+    width: 90%;
+    display: flex;
+    margin: 3vmin auto;
+    justify-content: space-between;
+}
+.wrapper > div{
+    flex-basis: 47%;
+    flex-grow: 0;
+    height: 17vmin;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    height: 20vmin;
+    justify-content: space-between;
+    margin: auto;
+}
+.onecolor{
+    flex-basis: 33%;
+    flex-grow: 0;
+    font-size: 3.5vmin;
+    margin:0;
+    width: 100%;
+    text-align: center;
+}
+.drin{
+    width: 7vmin;
+    height: inherit;
+    position: absolute;
+    left: calc(50% - 3.5vmin);
+    top: -1.25vmin;
+    cursor: grab;
+}
+@font-face {
+    font-family: 'main';
+    src: url('fonts/UbuntuCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    touch-action: none;
+    user-select: none;
+}
