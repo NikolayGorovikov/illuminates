@@ -1,4 +1,4 @@
-{
+
     const can = document.createElement("canvas");
     document.getElementById("canvasHolder").append(can);
     can.width = can.height = Math.min(window.innerWidth, window.innerHeight)*0.44;
@@ -262,4 +262,3 @@
     }
 
     window.addEventListener("tocuhend", (e)=>e.preventDefault());
-}
