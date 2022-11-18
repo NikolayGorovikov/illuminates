@@ -6,6 +6,7 @@
     text-align: center;
     line-height: 10vmin;
     border-radius: 3vmin;
+    cursor: pointer;
 }
 *{
     font-family: main;

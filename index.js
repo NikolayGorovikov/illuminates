@@ -15,7 +15,7 @@
         spots[index] = cords;
         localStorage.setItem(`spot${index}`, JSON.stringify(spots[index]));
     }
-    {
+    setTimeout(()=>{
         if (!localStorage.getItem("spot0")) {
             for (let i = 0; i < 4; i++) setSpot(i, spots[i]);
         }
@@ -28,8 +28,9 @@
         if (!localStorage.getItem("color")) setColor(color);
         else setColor(localStorage.getItem("color"));
         if (!localStorage.getItem("speed")) setSpeed(speed);
-        else setSpeed(localStorage.getItem("speed"))
-    }
+        else setSpeed(localStorage.getItem("speed"));
+        drawFrame();
+    });
 
     function setColor(rgb) {
         localStorage.setItem(`color`, String(rgb));
@@ -259,8 +260,6 @@
             elem.style.width = parseFloat(elem.style.width) - finalWidth/15 + "px";
         }, 6);
     }
-
-    drawFrame();
 
     window.addEventListener("tocuhend", (e)=>e.preventDefault());
 }
