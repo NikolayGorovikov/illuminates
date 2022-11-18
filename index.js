@@ -261,4 +261,4 @@
         }, 6);
     }
 
-    window.addEventListener("tocuhend", (e)=>e.preventDefault());
+    window.addEventListener("touchend", (e)=>e.preventDefault());
