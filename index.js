@@ -3,7 +3,7 @@
     document.getElementById("canvasHolder").append(can);
     can.width = can.height = Math.min(window.innerWidth, window.innerHeight)*0.44;
     const spots = [
-        [0.5, 0.2],
+        [0.500001, 0.2],
         [0.2, 0.8],
         [0.8, 0.8],
         [0.5,0.5]
