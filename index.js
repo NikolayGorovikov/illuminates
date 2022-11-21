@@ -135,7 +135,12 @@
             const r = Math.sqrt( (xx - spots[i][0])**2 + (yy - spots[i][1])**2 );
             const dx = xx - spots[i][0];
             const dy = yy - spots[i][1];
-            let atan = Math.atan(dy/dx);
+            let atan;
+            if (dx === 0) {
+                if (dy > 0) atan = Math.PI*3/2;
+                else atan = Math.PI/2;
+            }
+            else atan = Math.atan(dy/dx);
             if (dx > 0) atan+=Math.PI;
             const an = atan+angle;
             setSpot(i, [xx+r*Math.cos(an), yy+r*Math.sin(an)]);
